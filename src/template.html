@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book App</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+
+
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="main">
+          <div class="section">
+            <h1>Find Your Next Book</h1>
+            <p>Digit a subject</p>
+          </div>
+          <!-- Search form -->
+          <form class="box form">
+            <input type="text" id="search-input" placeholder="Example: love, history, fantasy..." autocomplete="off"/>
+            <button type="submit" class="search-btn btn" id="search-btn">
+              <i class="fas fa-search"></i>
+            </form>
+          </div>
+          <!-- End Search form -->
+
+          <!-- Loading animation-->
+          <div id="load" class="sk-circle">
+            <div class="sk-circle1 sk-child"></div>
+            <div class="sk-circle2 sk-child"></div>
+            <div class="sk-circle3 sk-child"></div>
+            <div class="sk-circle4 sk-child"></div>
+            <div class="sk-circle5 sk-child"></div>
+            <div class="sk-circle6 sk-child"></div>
+            <div class="sk-circle7 sk-child"></div>
+            <div class="sk-circle8 sk-child"></div>
+            <div class="sk-circle9 sk-child"></div>
+            <div class="sk-circle10 sk-child"></div>
+            <div class="sk-circle11 sk-child"></div>
+            <div class="sk-circle12 sk-child"></div>
+          </div>
+          <!-- End Loading animation-->
+
+
+
+        </div>
+  
+      
+  
+        <!-- Book List -->
+        <div class="grid-book" id="book-item">
+       
+        </div>
+
+        <div class="book-details">
+            <!-- recipe close btn -->
+            <button type="button" class="btn screen-close-btn" id="screen-close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+  
+            <!-- description content -->
+            <div class="book-details-content">
+            </div>
+
+        </div>
+          
+  
+      </div>
+  <footer>
+      <p>&copy; ❤️ handmade by <a href="mailto:luigilesca@hotmail.it">Luigi Lesca</a></p>
+    </footer>
+    
+</body>
+</html>

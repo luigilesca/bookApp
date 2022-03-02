@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --background: #caf0f8;
+  --primary: #0077b6;
+  --secondary: #90e0ef;
+  --calltoaction: #03045e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--background);
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 60px auto;
+
+  align-items: center;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  max-width: 400px;
+}
+
+.section h1 {
+  font-size: 28px;
+}
+
+.section p {
+  font-size: 22px;
+}
+
+.box {
+  margin: 10px auto;
+
+  display: flex;
+  cursor: pointer;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.box:hover input {
+  width: 400px;
+}
+
+.box input {
+  width: 0;
+  outline: 0;
+  border: none;
+  font-weight: 500;
+  transition: 0.8s;
+  background: transparent;
+}
+
+input[type="text"]:focus {
+  border-bottom: 2px solid var(--primary);
+}
+
+.btn {
+  font-family: inherit;
+  cursor: pointer;
+  outline: 0;
+  border: none;
+  background: transparent;
+}
+
+.box .fas {
+  color: var(--primary);
+  font-size: 18px;
+}
+
+.box .fas:hover {
+  color: var(--calltoaction);
+  font-size: 22px;
+  transition: 0.5s;
+}
+
+/* ---- Book List --- */
+
+.grid-book {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.book-container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin: 60px auto;
+  background: #fff;
+  border-radius: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.book-img {
+  width: 40%;
+  margin: 10px 0px;
+  display: flex;
+}
+
+.book-img img {
+  width: 50%;
+  margin: auto;
+}
+
+.info-book {
+  margin: auto;
+  margin: auto;
+  text-align: center;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.description-btn {
+  border: none;
+  text-decoration: none;
+  background: var(--primary);
+  color: var(--background);
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.description-btn:hover {
+  text-decoration: none;
+  background: var(--calltoaction);
+  color: var(--background);
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.notFound {
+  grid-template-columns: 1fr !important;
+  text-align: center;
+  background: #fff;
+  padding: 10px 0;
+  color: var(--calltoaction);
+  font-size: 1.8rem;
+  font-weight: 500;
+  width: 100%;
+  font-size: 24px;
+}
+
+/* book details */
+.book-details {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background: var(--primary);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  width: 70%;
+  height: 60%;
+  overflow-y: scroll;
+  display: none;
+  padding: 2rem 0;
+}
+.book-details::-webkit-scrollbar {
+  width: 10px;
+}
+.book-details::-webkit-scrollbar-thumb {
+  background: var(--background);
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+}
+
+.book-instruct {
+  align-items: center;
+  margin: 50px auto;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+span {
+  color: red;
+  font-weight: bold;
+}
+
+.book-instruct h3 {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.book-instruct p {
+  margin-top: 30px;
+}
+/* ---- JS ---- */
+
+.showDescription {
+  display: block;
+}
+
+.book-details-content {
+  margin: 30px;
+}
+
+.screen-close-btn {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  font-size: 24px;
+  background: var(--background);
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+}
+
+/* ---- Footer ---- */
+
+footer {
+  text-align: center;
+  margin: 50px;
+}
+
+/* ---- Media Screen --- */
+@media screen and (max-width: 600px) {
+  .box:hover input {
+    width: 200px;
+  }
+
+  .grid-book {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto;
+  }
+
+  .book-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 60px auto;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
+
+  .book-img {
+    width: 40%;
+    margin: 10px auto;
+    display: flex;
+  }
+
+  .book-img img {
+    width: 100%;
+    margin: 20px auto;
+    object-fit: cover;
+  }
+
+  .info-book {
+    margin: auto;
+    margin: 20px auto;
+    text-align: center;
+    word-break: break-word;
+  }
+
+  h1 {
+    font-size: 8px;
+  }
+
+  .book-instruct h3 {
+    font-size: 30px;
+  }
+
+  p {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  .description-btn {
+    text-decoration: none;
+    background: var(--primary);
+    color: var(--background);
+    padding: 7px;
+    border-radius: 20px;
+    font-size: 12px;
+    border: none;
+    margin-bottom: 20px;
+  }
+
+  .book-details {
+    width: 80%;
+    height: 70%;
+  }
+}
