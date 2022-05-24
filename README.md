@@ -66,7 +66,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 LinkedIn: https://www.linkedin.com/in/luigi-lesca/
 
-Netlify:  https://bookappjavascript.netlify.app/
+Netlify: https://bookappjs.netlify.app
 
 Portfolio : https://talent.start2impact.it/profile/luigi-lesca
 
